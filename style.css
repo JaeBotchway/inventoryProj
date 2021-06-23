@@ -1,0 +1,226 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    width:100%;
+    height:100%;
+    background-color: rgba(128, 128, 128, 0.082);
+    background-image:url(/images/pexels-marta-branco-1453008.jpg);
+    background-size: cover;
+    font-family:'Bitter', serif;
+}
+
+.dashboard a{
+text-decoration: none;
+cursor: pointer;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.247);
+    width:85%;
+    border:2px solid transparent;
+    border-radius: 10px;
+    margin:5rem 7rem;
+}
+.header{
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    margin-top: 2rem;
+}
+
+#span{
+    height:3rem;
+    display:inline-block;
+   padding:10px;
+}
+
+
+
+.main-page{
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;  
+}
+
+.left-side-panel a{
+    display:block;
+    text-decoration: none;
+    padding: 20px 50px;
+}
+
+.left-side-panel img{
+    width:4rem;
+    height: 4rem;
+}
+
+.main-panel{
+    border:2px solid transparent;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: rgba(237, 237, 237, 0.568); 
+    font-weight: bold;
+}
+
+.table-items th, td{
+    padding:15px;
+    text-align: center;
+}
+
+.table-items th{
+    color:rgba(0, 0, 255, 0.596); 
+}
+
+.table-items td{
+    font-weight: lighter;
+}
+
+.item1{
+    padding:40px;
+   
+}
+
+
+#total-items, #total-cat, #total-stock{
+    display:block;
+    text-align: center;
+   
+}
+
+#wrapper1, #wrapper2, #wrapper3{
+    background-color: rgba(30, 143, 255, 0.829);
+    color:white;
+    height:5px;
+    border:2px solid transparent;
+    border-radius: 10px;
+    margin:15px;
+    font-size: 14px;
+}
+
+.fa-trash-alt{
+    color:red;
+    cursor:pointer;
+}
+
+.fa-edit{
+    color:green;
+    cursor:pointer;
+}
+
+.fa-search{
+    color: rgba(0, 0, 255, 0.507);
+    cursor:pointer;
+}
+
+.main-panel input{
+    display:block;
+    padding:1rem;
+    width:50%;
+    margin-left: 10rem;
+}
+.main-panel select{
+    display:block;
+    padding:1rem;
+    width:55%;
+    margin-left: 10rem;
+}
+
+.main-panel label{
+    margin-left:10rem;
+    padding:1rem;
+}
+
+.btn{
+    border:none;
+    border-radius: 5px; 
+    padding:10px;
+    margin:auto 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.btn-added{
+    background-color: rgba(4, 4, 53, 0.877); 
+    color:white;
+}
+
+.btn-cancel{
+    color:rgba(15, 15, 233, 0.705)
+}
+
+
+.btn:hover,
+.btn:active {
+  background: #f67722;
+  border-color: #f67722;
+}
+
+.red{
+    background-color: rgba(255, 0, 0, 0.836);
+}
+
+.orange{
+    background-color: #f67722;
+}
+
+.green{
+    background-color: rgb(77, 207, 77);
+}
+
+
+.modal {
+    position: fixed;
+    z-index: 100;
+    background: rgb(237,237,237);
+    border-radius: 10px;
+    width: 50%;
+    height: 50vh;
+    top:-65vh;
+    left: 20%;
+    padding-top: 13vh;
+    padding-left: 8vw;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+
+    
+  }
+.visible{
+      top: 5vh !important;
+  }
+
+
+.modal__content input{
+    width: 40vw;
+    height: 5vh;
+    margin-bottom: 3vh;
+}
+
+.modal__actions .btn--passive{
+    color: rgba(15, 15, 233, 0.705);
+    margin-right: 2vw;
+
+}
+.modal__actions .btn--passive:hover{
+    color: rgba(15, 15, 233, 0.705);
+    background-color: #f67722;
+
+}
+.modal__actions .btn--success{
+    color: white;
+    background-color: rgba(4, 4, 53, 0.877);
+
+}
+.modal__actions .btn--success:hover{
+    color: white;
+    background-color: #f67722;
+    border: 1px solid #f67722;
+
+}
+
+.footer p{
+    text-align: center;
+    height:2rem;
+    padding:1rem;
+    color: rgb(11,151,176);
+    font-weight: bolder;
+}

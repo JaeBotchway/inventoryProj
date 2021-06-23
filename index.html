@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="main">
+
+        <div class="header">
+            <div class ="dashboard">
+                <span id="span" ><a href="index.html">DASHBOARD</a>
+                <p id="dummy"></p>
+                </span>
+            </div>
+            <div>
+                <span id="span"><i class="fas fa-search"></i></span>
+                <span id="span" href=""><i class="far fa-edit"></i></span>
+                <span id="span" href=""><i class="fas fa-trash-alt"></i></span>
+            </div>
+        </div>
+        <hr>
+
+        <div class="main-page">
+
+            <div class="left-side-panel">
+                <a href="add.html">Add Item</a>
+            </div>
+
+            <div class="main-panel">
+                <table class="table-items" cellpadding="0" cellspacing="5">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Category</th>
+                            <th>Quantity Available</th>
+                            <th>Stock</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id ="tableDetails">
+
+                    </tbody>
+
+                </table>
+            </div>
+
+
+            <div class="right-side-panel">
+                <div class="item1" id="wrapper1">
+                    <span>
+                        Total Items
+                        <span id="total-items">0</span>
+                    </span>
+                </div>
+
+                <div class="item1" id="wrapper2">
+                    <span>
+                        Total Categories
+                        <span id="total-cat">3</span>
+                    </span>
+                </div>
+
+                <div class="item1" id="wrapper3">
+                    <span>
+                        Items In Stock
+                        <span id="total-stock">0</span>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <footer class ="footer">
+        <div>
+            <hr>
+            <p>
+                Lilacs Jewelries &COPY; 2021
+            </p>
+        </div>
+
+    </footer>
+
+    <div class="modal" id="add-modal">
+        <div class="modal__content">
+            <label for="title">Product Name</label><br>
+            <input type="text" name="name" id="name" /><br>
+            <label for="description">Description</label><br>
+            <input type="text" name="description" id="description" /><br>
+            <label for="quantity">Quantity</label><br>
+            <input type="number" step="1" min="0" name="quantity" id="quantity" />
+        </div>
+
+        <div class="modal__actions">
+            <button class="btn btn--passive" id ="modalCancel">Cancel</button>
+            <button class="btn btn--success"  id = "modalAdd">Add</button>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/54517b94f0.js" crossorigin="anonymous"></script>
+     <script src ="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Items</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="main">
+
+        <div class="header">
+            <div class ="dashboard">
+                <span id="span" ><a href="index.html">DASHBOARD</a> </span>
+            </div>
+            <div>
+                <span id="span"><i class="fas fa-search"></i></span>
+                <span id="span"> <a href=" "><i class="far fa-edit"></i></a></span>
+                <span id="span"><a href = ""><i class="fas fa-trash-alt"></a></i></span>
+            </div>
+        </div>
+        <hr>
+
+        <div class="main-page">
+
+            <div class="left-side-panel">
+                <a href="">Add Item</a>
+            </div>
+
+            <div class="main-panel">
+                <div class="add-product">
+                    <label for="name">Product Name</label>
+                    <input type="text" name="name" id="name"  required/>
+                    <label for="description">Description</label>
+                    <input type="text" name="description" id="description" required />
+                    <label for="category">Category</label> 
+                    <select name= "category" id ="category" >
+                        <option value="Necklace">Necklace</option>
+                        <option value="Earrings">Earrings</option>
+                        <option value="Anklets">Anklets</option>
+                    </select>
+                    <label for="quantity">Quantity</label>
+                    <input type="number" step="1" min="0" name="quantity" id="quantity" required/>
+                </div>
+
+                <div class ="add-btn">
+                    <button class="btn btn-cancel" id = "cancelled">Cancel</button>
+                    <button class="btn btn-added" id ="add">Add</button>
+                </div>
+            </div>
+
+
+            <div class="right-side-panel">
+                <div class="item1" id="wrapper1">
+                    <span>
+                        Total Items
+                        <span id="total-items">0</span>
+                    </span>
+                </div>
+
+                <div class="item1" id="wrapper2">
+                    <span>
+                        Total Categories
+                        <span id="total-cat">3</span>
+                    </span>
+                </div>
+
+                <div class="item1" id="wrapper3">
+                    <span>
+                        Items In Stock
+                        <span id="total-stock">0</span>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/54517b94f0.js" crossorigin="anonymous"></script>
+    <script src ="script.js"></script>
+    
+</body>
+
+</html>
