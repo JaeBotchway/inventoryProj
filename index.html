@@ -21,7 +21,7 @@
                 <p id="dummy"></p>
                 </span>
             </div>
-            <div>
+            <div class="ico">
                 <span id="span"><i class="fas fa-search"></i></span>
                 <span id="span" href=""><i class="far fa-edit"></i></span>
                 <span id="span" href=""><i class="fas fa-trash-alt"></i></span>
@@ -33,12 +33,12 @@
 
             <div class="left-side-panel">
                 <a href="add.html">Add Item</a>
-                <p>LILACS jewelleries,DUBAI <br>
-                    We provide the best shopping experience. </p>
+                <!-- <p>LILACS jewelleries,DUBAI <br>
+                    We provide the best shopping experience. </p> -->
             </div>
 
             <div class="main-panel">
-                <table class="table-items" cellpadding="0" cellspacing="5">
+                <table class="table-items" cellpadding="0" cellspacing="3">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -62,6 +62,7 @@
                 <div class="item1" id="wrapper1">
                     <span>
                         Total Items
+                        <br>
                         <span id="total-items">0</span>
                     </span>
                 </div>
@@ -69,6 +70,7 @@
                 <div class="item1" id="wrapper2">
                     <span>
                         Total Categories
+                        <br>
                         <span id="total-cat">3</span>
                     </span>
                 </div>
@@ -76,6 +78,7 @@
                 <div class="item1" id="wrapper3">
                     <span>
                         Items In Stock
+                        <br>
                         <span id="total-stock">0</span>
                     </span>
                 </div>
@@ -95,19 +98,21 @@
 
     </footer>
 
-    <div class="modal" id="add-modal">
-        <div class="modal__content">
-            <label for="title">Product Name</label><br>
-            <input type="text" name="name" id="name" /><br>
-            <label for="description">Description</label><br>
-            <input type="text" name="description" id="description" /><br>
-            <label for="quantity">Quantity</label><br>
-            <input type="number" step="1" min="0" name="quantity" id="quantity" />
-        </div>
-
-        <div class="modal__actions">
-            <button class="btn btn--passive" id ="modalCancel">Cancel</button>
-            <button class="btn btn--success"  id = "modalAdd">Update</button>
+    <div id="backdrop">
+        <div class="modal" id="add-modal">
+            <div class="modal__content">
+                <label for="title">Product Name</label><br>
+                <input type="text" name="name" id="name" /><br>
+                <label for="description">Description</label><br>
+                <input type="text" name="description" id="description" /><br>
+                <label for="quantity">Quantity</label><br>
+                <input type="number" step="1" min="0" name="quantity" id="quantity" />
+            </div>
+    
+            <div class="modal__actions">
+                <button class="btn btn--passive" id ="modalCancel">Cancel</button>
+                <button class="btn btn--success"  id = "modalAdd">Update</button>
+            </div>
         </div>
     </div>
 

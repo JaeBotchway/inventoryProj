@@ -4,7 +4,7 @@ let start = () => {
     if (localStorage.getItem(0) == null || JSON.parse(localStorage.getItem(0)).length == 0) {
         console.log("setting")
         const newArray = [
-            { product: "Jack", description: "hahah", category: "Earrings", quantity: 40 }
+            { product: "Pearls", description: "white", category: "Earrings", quantity: 40 }
         ]
         localStorage.setItem(0, JSON.stringify(newArray))
     }
@@ -20,6 +20,7 @@ let start = () => {
 
 // }
 
+//confirmaton action for delete icon
 
 //get or calls arrays in local storage and stores in variable arrayData
 let arrayData = localStorage.getItem(0)
@@ -58,7 +59,7 @@ let displayTable = (table) => {
                     <td class ="stock"></td>
                     <td>
                      <i id="update${i}"  class="far fa-edit"></i>
-                     <i id="remove${i}" class="fas fa-trash-alt"></i>
+                     <i id="remove${i}" class="fas fa-trash-alt"></i></a>   
                     </td> 
                     </tr>`
         newDisplay.append(row)
@@ -94,8 +95,10 @@ update.forEach(line =>{
        let value = e.target.getAttribute("id")
         console.log(value)
 
+        let backdrop = document.getElementById('backdrop')
         let updated = document.getElementById("add-modal")
         updated.classList.add("visible")
+        backdrop.classList.add("visible")
         console.log(updated.classList)
          let index = parseInt(value.split("update")[1]);
          console.log( index)
@@ -130,12 +133,12 @@ update.forEach(line =>{
     })
 })
 
+
 // this function calls the delete modal
 const deleteItem = document.querySelectorAll(".fa-trash-alt")
 console.log(deleteItem)
 deleteItem.forEach(line =>{
     line.addEventListener("click", (e) =>{
-
         let deleteValue = e.target.getAttribute('id')
         let index = parseInt(deleteValue.split("remove")[1]);
         let itemsInStorage = JSON.parse(localStorage.getItem(0));
@@ -144,6 +147,8 @@ deleteItem.forEach(line =>{
         location.href = "index.html";
     })
 })
+
+
 
 //ths function works on the delete button on the modal
 let cancelModal = document.getElementById('modalCancel')
